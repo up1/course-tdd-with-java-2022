@@ -35,5 +35,5 @@
 
 ## Demo
 * [Spring boot with Apache Maven + Jacoco](https://github.com/up1/course-tdd-with-java-2020/tree/main/demo-spring-boot-maven)
-* Spring boot with Gradle
+* [Spring boot with Gradle + Jacoco](https://github.com/up1/course-tdd-with-java-2020/tree/main/demo-spring-boot-gradle)
   
