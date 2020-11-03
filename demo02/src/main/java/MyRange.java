@@ -25,16 +25,4 @@ public class MyRange {
         }
         return start + 1;
     }
-
-    public String getResult() {
-        int start = getStart();
-        int end = 5;
-//        String result = start + "";
-//        String result = String.valueOf(start);
-        String result = String.format("%s", start);
-        for (int i = start+1; i <= end; i++) {
-            result = String.join(",", result, String.valueOf(i));
-        }
-        return result;
-    }
 }
