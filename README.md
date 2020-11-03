@@ -1,5 +1,10 @@
 # Course :: TDD with Java
 
+## Software requirements
+* JDK 8+
+* IntelliJ IDE community version
+* JUnit 5
+
 ## Outlines
 * Testing in general
 * Types of Testing
