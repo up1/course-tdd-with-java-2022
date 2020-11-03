@@ -15,5 +15,5 @@ $gradlew jacocoTestReport
 
 ## Start Development server
 ```
-$mvnw bootRun
+$gradlew bootRun
 ```
