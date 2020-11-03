@@ -23,13 +23,13 @@
   * Test structure
   * Annotation
   * Assertion
-* Test double => Manage depednencies
+* Test double => Manage dependencies
   * Dummy
   * Stub
   * Spy
   * Mock
   * Fake
-* S.O.L.I.D priciple
+* S.O.L.I.D principle
 * Continuous Integration and Testing
 * Workshop
 
