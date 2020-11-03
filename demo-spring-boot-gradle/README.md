@@ -17,3 +17,8 @@ $gradlew jacocoTestReport
 ```
 $gradlew bootRun
 ```
+## Working with SonarQube
+
+```
+$gradlew sonarqube
+```
