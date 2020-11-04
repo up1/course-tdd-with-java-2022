@@ -14,8 +14,8 @@ public class TennisGame3 {
         String s;
         String[] p = new String[]
                 {"Love", "Fifteen", "Thirty", "Forty"};
-        // All
-        if(player1Score == player2Score && player1Score < 3) {
+
+        if(เสมอกัน()) {
             return p[player1Score] + "-All";
         }
 
@@ -31,6 +31,10 @@ public class TennisGame3 {
                     * (player1Score - player2Score) == 1) return "Advantage " + s;
             return "Win for " + s;
         }
+    }
+
+    private boolean เสมอกัน() {
+        return player1Score == player2Score && player1Score < 3;
     }
 
     public void wonPoint(String playerName) {
