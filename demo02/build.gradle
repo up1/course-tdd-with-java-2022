@@ -12,6 +12,8 @@ repositories {
 dependencies {
     testImplementation(platform('org.junit:junit-bom:5.7.0'))
     testImplementation('org.junit.jupiter:junit-jupiter')
+    testImplementation 'com.github.tomakehurst:wiremock:2.27.2'
+    testImplementation 'io.rest-assured:rest-assured:4.3.1'
 }
 
 test {
