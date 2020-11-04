@@ -1,0 +1,27 @@
+-  request:
+      method: GET
+      url: /payment/1
+ 
+   response:
+      status: 200
+      headers:
+         content-type: application/json
+      file: 1.json
+
+-  request:
+      method: GET
+      url: /payment/3
+ 
+   response:
+      status: 200
+      latency: 3000
+      headers:
+         content-type: application/json
+      file: 1.json
+
+-  request:
+      method: GET
+      url: /payment/2
+ 
+   response:
+      status: 500
