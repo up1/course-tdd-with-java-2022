@@ -13,7 +13,7 @@ RUN ./gradlew build
 
 
 
-FROM openjdk:8-jdk-alpine
+FROM openjdk:8-jre-alpine
 ENV JAR_FILE=demo-spring-boot-gradle-0.0.1-SNAPSHOT.jar
 ENV APP_HOME=/usr/app/
 WORKDIR $APP_HOME
