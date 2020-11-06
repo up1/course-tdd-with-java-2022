@@ -30,11 +30,11 @@ $gradlew sonarqube
 ## Run with Docker
 
 ```
-# build docker
+# 1. build docker
 $docker image build -t demo-spring-boot-gradle .
 ```
 
 ```
-# run docker
+# 2. run docker
 $docker container run -d -p 8080:8080 demo-spring-boot-gradle
 ```
