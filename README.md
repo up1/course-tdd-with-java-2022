@@ -31,7 +31,7 @@
   * Fake
 * S.O.L.I.D principle
 * Continuous Integration and Testing
-* Workshop
+* [Workshop with Spring Boot](https://github.com/up1/course-springboot-2022/wiki/Workshop-REST-API)
 
 ## Demo
 * [Spring boot with Apache Maven + Jacoco](https://github.com/up1/course-tdd-with-java-2020/tree/main/demo-spring-boot-maven)
