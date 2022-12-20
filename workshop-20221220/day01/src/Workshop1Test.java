@@ -6,6 +6,20 @@ import org.junit.jupiter.params.provider.CsvSource;
 import static org.junit.jupiter.api.Assertions.*;
 
 public class Workshop1Test {
+
+    @Test
+    public void case08(){
+        Workshop1 workshop1 = new Workshop1("*1,5*");
+        try {
+            workshop1.getResult();
+            fail("Exception not occur");
+        }catch (RuntimeException e) {
+            if(!"Input Error".equals(e.getMessage())) {
+                fail("Error Message invalid");
+            }
+        }
+    }
+
     @ParameterizedTest
     @CsvSource({
             "'[1,5]', '1,2,3,4,5'",
