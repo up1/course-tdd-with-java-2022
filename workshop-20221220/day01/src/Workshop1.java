@@ -20,4 +20,18 @@ public class Workshop1 {
         }
         return value + 1;
     }
+
+    public String getResult() {
+        int start = getStart();
+        int end = 5;
+        String result = "";
+        for (int i = start; i <= end; i++) {
+            result += i + ",";
+        }
+        return result
+                .substring(0, result.length() - 1);
+    }
+
+
+
 }

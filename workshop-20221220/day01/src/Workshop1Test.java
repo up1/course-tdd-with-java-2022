@@ -6,6 +6,14 @@ import static org.junit.jupiter.api.Assertions.*;
 public class Workshop1Test {
 
     @Test
+    @DisplayName("[1,5] => 1,2,3,4,5")
+    public void case05(){
+        Workshop1 workshop1 = new Workshop1("[1,5]");
+        String actualResult = workshop1.getResult();
+        assertEquals("1,2,3,4,5", actualResult);
+    }
+
+    @Test
     @DisplayName("start with include [1,5] => 1")
     public void case03(){
         Workshop1 workshop1 = new Workshop1("[1,5]");
