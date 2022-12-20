@@ -8,4 +8,8 @@ public class Workshop1 {
     public boolean startWithInclude() {
         return input.startsWith("[");
     }
+
+    public int getStart() {
+        return 0;
+    }
 }

@@ -1,10 +1,17 @@
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertFalse;
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.jupiter.api.Assertions.*;
 
 public class Workshop1Test {
+
+    @Test
+    @DisplayName("start with include [1,5] => 1")
+    public void case03(){
+        Workshop1 workshop1 = new Workshop1("[1,5]");
+        int actualResult = workshop1.getStart();
+        assertEquals(1, actualResult);
+    }
 
     @Test
     @DisplayName("start with include [1,5] => true")
@@ -16,7 +23,7 @@ public class Workshop1Test {
     }
 
     @Test
-    @DisplayName("start with excluse (1,5] => false")
+    @DisplayName("start with exclude (1,5] => false")
     public void case02(){
         Workshop1 workshop1 = new Workshop1("(1,5]");
         boolean actualResult
