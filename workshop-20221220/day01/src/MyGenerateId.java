@@ -1,8 +1,12 @@
 import java.util.Random;
 
+interface IRandom {
+    int nextInt(int bound);
+}
+
 public class MyGenerateId {
 
-    Random random;
+    IRandom random;
 
     public String getId() {
         int number = random.nextInt(10);
