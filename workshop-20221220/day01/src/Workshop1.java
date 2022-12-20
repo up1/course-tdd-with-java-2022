@@ -29,7 +29,7 @@ public class Workshop1 {
 //            throw new Exception("Input Error");
 
 //            Unchecked exception , runtime exception
-            throw new RuntimeException("Input Error 2");
+            throw new RuntimeException("Input Error");
         }
 
 
