@@ -1,3 +1,5 @@
+import static java.lang.Integer.*;
+
 public class Workshop1 {
     public static final int ASCII_VALUE_OF_ZERO = 48;
     private final String input;
@@ -11,7 +13,7 @@ public class Workshop1 {
     }
 
     public int getStart() {
-        // 48 = ASCII code ของ 0
-        return input.charAt(1) - ASCII_VALUE_OF_ZERO;
+        return parseInt(String.valueOf(
+                input.charAt(1)));
     }
 }
