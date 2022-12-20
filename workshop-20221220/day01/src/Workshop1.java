@@ -13,7 +13,11 @@ public class Workshop1 {
     }
 
     public int getStart() {
-        return parseInt(String.valueOf(
-                input.charAt(1)));
+        int value = parseInt(
+                String.valueOf(input.charAt(1)));
+        if(startWithInclude()) {
+            return value;
+        }
+        return value + 1;
     }
 }
