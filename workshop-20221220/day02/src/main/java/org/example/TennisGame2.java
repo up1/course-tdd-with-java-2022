@@ -3,8 +3,8 @@ package org.example;
 import java.util.Objects;
 
 public class TennisGame2 implements TennisGame {
-    public int p1Point = 0;
-    public int p2Point = 0;
+    private int p1Point = 0;
+    private int p2Point = 0;
 
     private final String player1Name;
     private final String player2Name;
