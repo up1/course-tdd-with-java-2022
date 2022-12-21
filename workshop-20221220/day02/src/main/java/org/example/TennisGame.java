@@ -1,0 +1,6 @@
+package org.example;
+
+public interface TennisGame {
+    void wonPoint(String playerName);
+    String getScore();
+}
