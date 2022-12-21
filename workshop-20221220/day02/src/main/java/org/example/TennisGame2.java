@@ -3,11 +3,11 @@ package org.example;
 import java.util.Objects;
 
 public class TennisGame2 implements TennisGame {
-    public int P1point = 0;
-    public int P2point = 0;
+    public int p1Point = 0;
+    public int p2Point = 0;
 
-    public String P1res = "";
-    public String P2res = "";
+    public String p1Res = "";
+    public String p2Res = "";
     private final String player1Name;
     private final String player2Name;
 
@@ -20,58 +20,58 @@ public class TennisGame2 implements TennisGame {
         String[] scoreNames
                 = new String[] { "Love", "Fifteen", "Thirty", "Forty" };
         String score = "";
-        if (P1point == P2point && P1point < 4) {
-            score = scoreNames[P1point];
+        if (p1Point == p2Point && p1Point < 4) {
+            score = scoreNames[p1Point];
             score += "-All";
         }
-        if (P1point == P2point && P1point >= 3)
+        if (p1Point == p2Point && p1Point >= 3)
             score = "Deuce";
 
-        if (P1point > 0 && P2point == 0) {
-            if(P1point <= 3 ){
-                P1res = scoreNames[P1point];
+        if (p1Point > 0 && p2Point == 0) {
+            if(p1Point <= 3 ){
+                p1Res = scoreNames[p1Point];
             }
-            P2res = scoreNames[P2point];
-            score = P1res + "-" + P2res;
+            p2Res = scoreNames[p2Point];
+            score = p1Res + "-" + p2Res;
         }
-        if (P2point > 0 && P1point == 0) {
-            if(P2point <= 3 ){
-                P2res = scoreNames[P2point];
+        if (p2Point > 0 && p1Point == 0) {
+            if(p2Point <= 3 ){
+                p2Res = scoreNames[p2Point];
             }
-            P1res = scoreNames[P1point];
-            score = P1res + "-" + P2res;
+            p1Res = scoreNames[p1Point];
+            score = p1Res + "-" + p2Res;
         }
 
-        if (P1point > P2point && P1point < 4) {
-            score = scoreNames[P1point] + "-" + scoreNames[P2point];
+        if (p1Point > p2Point && p1Point < 4) {
+            score = scoreNames[p1Point] + "-" + scoreNames[p2Point];
         }
-        if (P2point > P1point && P2point < 4) {
-            score = scoreNames[P1point] + "-" + scoreNames[P2point];
+        if (p2Point > p1Point && p2Point < 4) {
+            score = scoreNames[p1Point] + "-" + scoreNames[p2Point];
         }
 
-        if (P1point > P2point && P2point >= 3) {
+        if (p1Point > p2Point && p2Point >= 3) {
             score = "Advantage " + player1Name;
         }
 
-        if (P2point > P1point && P1point >= 3) {
+        if (p2Point > p1Point && p1Point >= 3) {
             score = "Advantage " + player2Name;
         }
 
-        if (P1point >= 4 && P2point >= 0 && (P1point - P2point) >= 2) {
+        if (p1Point >= 4 && p2Point >= 0 && (p1Point - p2Point) >= 2) {
             score = "Win for " + player1Name;
         }
-        if (P2point >= 4 && P1point >= 0 && (P2point - P1point) >= 2) {
+        if (p2Point >= 4 && p1Point >= 0 && (p2Point - p1Point) >= 2) {
             score = "Win for " + player2Name;
         }
         return score;
     }
 
     public void P1Score() {
-        P1point++;
+        p1Point++;
     }
 
     public void P2Score() {
-        P2point++;
+        p2Point++;
     }
 
     public void wonPoint(String player) {
