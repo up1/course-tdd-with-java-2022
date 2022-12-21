@@ -27,27 +27,13 @@ public class TennisGame2 implements TennisGame {
             return  score;
         }
 
-
+        // All
         if (p1Point == p2Point && p1Point < 4) {
             score = scoreNames[p1Point];
             score += "-All";
+            return  score;
         }
 
-
-        if (p1Point > 0 && p2Point == 0) {
-            if(p1Point <= 3 ){
-                p1Res = scoreNames[p1Point];
-            }
-            p2Res = scoreNames[p2Point];
-            score = p1Res + "-" + p2Res;
-        }
-        if (p2Point > 0 && p1Point == 0) {
-            if(p2Point <= 3 ){
-                p2Res = scoreNames[p2Point];
-            }
-            p1Res = scoreNames[p1Point];
-            score = p1Res + "-" + p2Res;
-        }
 
         if (p1Point > p2Point && p1Point < 4) {
             score = scoreNames[p1Point] + "-" + scoreNames[p2Point];
@@ -66,10 +52,20 @@ public class TennisGame2 implements TennisGame {
 
         if (p1Point >= 4 && p2Point >= 0 && (p1Point - p2Point) >= 2) {
             score = "Win for " + player1Name;
+            return score;
         }
         if (p2Point >= 4 && p1Point >= 0 && (p2Point - p1Point) >= 2) {
             score = "Win for " + player2Name;
+            return score;
         }
+
+
+        // Try
+        if (Math.max(p1Point, p2Point) < 4) {
+            score = scoreNames[p1Point] + "-" + scoreNames[p2Point];
+        }
+
+
         return score;
     }
 
