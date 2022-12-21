@@ -30,6 +30,9 @@
   * Mock
   * Fake
 * S.O.L.I.D principle
+* [Code smell and Refactoring](https://refactoring.guru/refactoring/smells)
+  * [KATA Tennis](https://github.com/emilybache/Tennis-Refactoring-Kata)
+  * [Bad code](https://github.com/up1/workshop-java-badcode)
 * Continuous Integration and Testing
 * [Workshop with Spring Boot](https://github.com/up1/course-springboot-2022/wiki/Workshop-REST-API)
 
