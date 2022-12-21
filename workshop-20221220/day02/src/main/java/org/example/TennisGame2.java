@@ -34,14 +34,6 @@ public class TennisGame2 implements TennisGame {
             return  score;
         }
 
-
-        if (p1Point > p2Point && p1Point < 4) {
-            score = scoreNames[p1Point] + "-" + scoreNames[p2Point];
-        }
-        if (p2Point > p1Point && p2Point < 4) {
-            score = scoreNames[p1Point] + "-" + scoreNames[p2Point];
-        }
-
         if (p1Point > p2Point && p2Point >= 3) {
             score = "Advantage " + player1Name;
         }
