@@ -20,12 +20,19 @@ public class TennisGame2 implements TennisGame {
         String[] scoreNames
                 = new String[] { "Love", "Fifteen", "Thirty", "Forty" };
         String score = "";
+
+        // Deuce
+        if (p1Point == p2Point && p1Point >= 3) {
+            score = "Deuce";
+            return  score;
+        }
+
+
         if (p1Point == p2Point && p1Point < 4) {
             score = scoreNames[p1Point];
             score += "-All";
         }
-        if (p1Point == p2Point && p1Point >= 3)
-            score = "Deuce";
+
 
         if (p1Point > 0 && p2Point == 0) {
             if(p1Point <= 3 ){

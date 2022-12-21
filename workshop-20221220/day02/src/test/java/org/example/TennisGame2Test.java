@@ -60,7 +60,7 @@ public class TennisGame2Test {
         addPoints(game, player2Score, "player2");
 
 //        assertThat(game.getScore()).isEqualTo(expectedScore);
-        assertEquals(game.getScore(), expectedScore);
+        assertEquals(expectedScore, game.getScore());
     }
     private void addPoints(TennisGame game, int points, String playerName) {
         for (int i = 0; i < points; i++) {
