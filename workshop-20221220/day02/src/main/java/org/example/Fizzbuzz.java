@@ -2,15 +2,20 @@ package org.example;
 
 public class Fizzbuzz {
     public String call(int input) {
-        if (input % 15 == 0) {
-            return "FizzBuzz";
+
+        BusinessRule[] rules = new BusinessRule[]{
+                new FizzBuzzBusinessRule(),
+                new FizzBusinessRule(),
+                new BuzzBusinessRule(),
+                new AhaBusinessRule()
+        };
+
+        for (BusinessRule rule : rules) {
+            if (rule.check(input)) {
+                return rule.say();
+            }
         }
-        if (input % 3 == 0) {
-            return "Fizz";
-        }
-        if (input % 5 == 0) {
-            return "Buzz";
-        }
+
         return String.valueOf(input);
     }
 }

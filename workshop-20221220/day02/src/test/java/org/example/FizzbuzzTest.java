@@ -5,6 +5,13 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class FizzbuzzTest {
+
+    @Test
+    public void casex(){
+        Fizzbuzz fizzbuzz = new Fizzbuzz();
+        assertEquals("AHA", fizzbuzz.call(7));
+    }
+
     @Test
     public void case01(){
         Fizzbuzz fizzbuzz = new Fizzbuzz();
